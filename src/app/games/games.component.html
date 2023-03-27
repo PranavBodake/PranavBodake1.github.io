@@ -1,0 +1,27 @@
+
+<div class="mb-3" style="width: 250px; margin-top: 25px; margin-left: 1200px;">
+
+  <label class="seach-text" for="filter" style="font-weight:500; font-size: 16px;">Search:</label>
+  <input type="text" class="form-control" [(ngModel)]="filter" style="border: 1px solid black;" placeholder="Start Typing to filter...">
+
+</div>
+
+
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="margin-left: 120px;">
+  <div *ngFor="let product of filtered" class="col">
+  <div class="card" style="width: 300px; margin-top: 25px;">
+    <img [src]="product.image" class="card-img-top" [alt]="product.name" [ngStyle]="imgstyle">
+    <div class="card-body">
+      <h4 class="card-title">{{product.id}}</h4>
+      <h3><strong>{{product.name }}</strong></h3>
+      <h4>{{product.price | currency: 'INR' }}</h4>
+      <p>{{product.description | slice:0:100}}</p>
+     <span> <a href="#" class="btn btn-success" (click)="addwishlist($event)">Add to Wishlist <i class="bi bi-bookmark"></i></a><br>
+      <a href="#" class="btn btn-secondary" (click)="adddownload($event)">Buy and Download <i class="bi bi-cloud-arrow-down"></i></a> </span>
+    </div>
+  </div>
+  </div>
+  </div>
+
+

@@ -1,0 +1,97 @@
+<div class="container text-center" style="margin-top: 30px; ">
+  <div class="row">
+    <div class="col-sm-6" style="height: 400px;">
+<h1 style="font-size: 32px;">WELCOME TO <strong> GameOn </strong></h1><br><br>
+
+<h2> GameOn Passes </h2><Br>
+
+<h3>GameOn Pass Ultimate includes GameOn membershipfor hundreds of high-quality games. Play games with friends on Mobile and PC and get an Tencent Play membership – all for one low monthly price. </h3><br><br>
+
+<h4>Join now to get your first month Free</h4><br>
+
+<h5 style="background-color: chartreuse;"
+[routerLink]="['/subscription']"> <button class="btn">JOIN NOW > </button></h5>
+    </div>
+    <div class="col-sm-3" style="min-height: 600px;">
+      <img src="assets/home/home1.jpg" alt="home1" style="width: 300px; height: 400px;">
+    </div>
+    <div class="col-sm-3" style="min-height: 600px;">
+      <img src="assets/home/home2.png" alt="home2" style="width: 300px; height: 400px;" >
+    </div>
+  </div>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" >
+    <div class="carousel-indicators" >
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/carasoul/carasoul1.webp" class="d-block w-100" alt="carousel1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/carasoul/carasoul2.webp" class="d-block w-100" alt="carousel2">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="container text-center" style="margin-top: 25px
+  ; margin-left: 50px;">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 350px ;">
+          <img src="assets/card/all.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">All Games</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a [routerLink]="['/all-games']" class="btn btn-dark"> All Games</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 350px;">
+          <img src="assets/card/top.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Top Rated</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a [routerLink]="['/top-rated']" class="btn btn-dark">Top Games</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 350px;">
+          <img src="assets/card/new.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Newly Released</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a [routerLink]="['/new-release']" class="btn btn-dark ">New Games</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

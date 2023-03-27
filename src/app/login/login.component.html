@@ -1,0 +1,35 @@
+
+<div [ngStyle]="divsize" style=" border: 2px solid black;">
+  <div class="welcome-box" >
+    <h1 style="text-decoration: underline;">Sign In</h1>
+
+<form [formGroup]="login" (ngSubmit)="submitForm()">
+  <div class="mb-3" style="margin-top: 20px;">
+    <label for="email" class="form-label">User Name:</label>
+    <input  type="email" class="form-control" id="email" formControlName="email" >
+    <div class="alert alert-danger" role="alert" *ngIf="emailctr.dirty && emailctr.invalid"> Please Enter Valid User Id</div>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="password" formControlName="password">
+  </div>
+
+  <button class="btn btn-outline-warning"
+  [routerLink]="['/forgetpassword']"
+  >Forget Password?</button>
+  <button class="btn btn-outline-info"
+  [routerLink]="['/signup']" style="margin-left: 25px;">New Login</button><br><br>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+  </div>
+  <button type="submit" class="btn btn-outline-success" [disabled]="login.invalid">Submit</button>
+</form>
+</div>
+</div>
+
+
