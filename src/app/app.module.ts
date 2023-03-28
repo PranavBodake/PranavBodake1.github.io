@@ -17,6 +17,9 @@ import { SignupComponent } from './signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule, NgbCarousel, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PaymentredirectComponent } from './paymentredirect/paymentredirect.component';
 
 
 
@@ -30,7 +33,11 @@ const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch:'full' },
   { path : 'subscription', component: SubscriptionComponent, title: 'GameOn | Subscription'},
   { path: 'signup', component:SignupComponent, title: 'GameOn | Signup'},
-  { path:'forgetpassword', component:ForgetpasswordComponent, title:'GameOn | Forget' }
+  { path:'forgetpassword', component:ForgetpasswordComponent, title:'GameOn | Forget' },
+  { path: 'payment', component:PaymentComponent, title: 'Payment Gateway' },
+  { path:'redirect', component :PaymentredirectComponent, title:'Redirect' },
+  { path:'**', component:PagenotfoundComponent, title:'404' },
+
 ]
 
 @NgModule({
@@ -45,7 +52,10 @@ const routes : Routes = [
     SubscriptionComponent,
     HomeComponent,
     SignupComponent,
-    ForgetpasswordComponent
+    ForgetpasswordComponent,
+    PagenotfoundComponent,
+    PaymentComponent,
+    PaymentredirectComponent
   ],
   imports: [
     BrowserModule,

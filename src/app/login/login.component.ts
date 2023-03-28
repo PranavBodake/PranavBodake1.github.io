@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Login } from '../login'
 @Component({
   selector: 'app-login',
@@ -38,7 +39,7 @@ export class LoginComponent implements OnInit {
   //   })
   // }
 
-  constructor(){}
+  constructor(private router : Router){}
   ngOnInit(): void {
   }
 
@@ -46,6 +47,8 @@ export class LoginComponent implements OnInit {
     return this.login.get('email') as FormControl;
   }
 
-
+  logedin():void{
+    this.router.navigateByUrl('home')
+  }
 
 }

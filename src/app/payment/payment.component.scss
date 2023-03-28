@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+form{
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.inputBox{
+  margin: 15px 0 ;
+}
+
+span{
+  margin-bottom: 5px;
+  display: block;
+}
+
+input{
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 5px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+input:focus{
+  border: 1px solid #000;
+}
+
+.flex{
+  display: flex;
+  gap:  15px;
+}
+
+.flex .input{
+  margin-top: 5px;
+}
+
+img{
+  filter: drop-shadow(0,0,1px #000);
+}
